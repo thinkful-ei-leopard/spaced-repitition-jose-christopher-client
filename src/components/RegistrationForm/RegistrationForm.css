@@ -1,0 +1,23 @@
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.reg-div{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 5px 25%;
+}
+
+.reg-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reg-footer > a, button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
