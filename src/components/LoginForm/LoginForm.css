@@ -1,0 +1,16 @@
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.login-div{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 5px 25%;
+}
+
+.LoginForm > button {
+  align-self: center;
+}
