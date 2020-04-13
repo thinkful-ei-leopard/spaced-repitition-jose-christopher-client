@@ -48,45 +48,48 @@ class RegistrationForm extends Component {
           {error && <p>{error}</p>}
         </div>
         <div className='reg-div'>
-          <Label htmlFor='registration-name-input'>
+          <Label htmlFor='registration-name-input' className='regLabel'>
             Enter your name<Required />
           </Label>
           <Input
             ref={this.firstInput}
             id='registration-name-input'
             name='name'
+            className='regInput'
             required
           />
         </div>
         <div className='reg-div'>
-          <Label htmlFor='registration-username-input'>
+          <Label htmlFor='registration-username-input' className='regLabel'>
             Choose a username<Required />
           </Label>
           <Input
             id='registration-username-input'
             name='username'
+            className='regInput'
             required
           />
         </div>
         <div className='reg-div'>
-          <Label htmlFor='registration-password-input'>
+          <Label htmlFor='registration-password-input' className='regLabel'>
             Choose a password<Required />
           </Label>
           <Input
             id='registration-password-input'
             name='password'
             type='password'
+            className='regInput'
             required
           />
         </div>
         <footer
           className='reg-footer'
         >
-          <Button type='submit'>
+          <Button type='submit' className='regButton'>
             Sign up
           </Button>
           {' '}
-          <Link to='/login'>Already have an account?</Link>
+          <Link to='/login' className='regLink'>Already have an account?</Link>
         </footer>
       </form>
     )

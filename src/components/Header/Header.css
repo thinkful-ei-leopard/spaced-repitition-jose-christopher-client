@@ -2,7 +2,53 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
   padding: 5px 10px;
   height: 70px;
+  margin-bottom: 30px;
+}
+
+.hablaH1 {
+  padding: 10px;
+}
+
+.hablaLink {
+  color: black;
+  transition-duration: 0.4s;
+}
+
+.hablaLink:hover {
+  color: #AA151B;
+  font-size: 35px;
+}
+
+.loginLink {
+  border: 1px solid black;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: black;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  margin-left: 10px;
+}
+
+.signUpLink {
+  padding: 5px;
+  border: 1px solid black;
+  color: white;
+  border-radius: 8px;
+  background-color: black;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  margin-left: 5px;
+}
+
+.signUpLink:hover {
+  background-color: #F1BF00;
+  color: black;
+}
+
+.loginLink:hover {
+  background-color: #F1BF00;
+  color: black;
 }

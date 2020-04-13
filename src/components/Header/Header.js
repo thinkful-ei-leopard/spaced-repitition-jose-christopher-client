@@ -31,9 +31,9 @@ class Header extends Component {
   renderLoginLink() {
     return (
       <nav>
-        <Link to='/login'>Login</Link>
+        <Link to='/login' className='loginLink'>Login</Link>
         {' '}
-        <Link to='/register'>Sign up</Link>
+        <Link to='/register' className='signUpLink'>Sign up</Link>
       </nav>
     )
   }
@@ -41,8 +41,8 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h1>
-          <Link to='/'>
+        <h1 className='hablaH1'>
+          <Link to='/' className='hablaLink'>
             Habla
           </Link>
         </h1>
