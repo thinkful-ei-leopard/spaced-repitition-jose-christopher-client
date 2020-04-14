@@ -1,0 +1,59 @@
+.mainUL {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mainUL > li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F1BF00;
+}
+
+.dashPara {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.dashH2 {
+    margin: 70px auto 20px auto;
+}
+
+.startPracticeLink {
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    max-width: 30%;
+    margin: 0px auto 20px auto;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #AA151B;
+    transition-duration: 0.4s;
+}
+
+.startPracticeLink:hover {
+    background-color: #F1BF00;
+    color: black;
+}
+
+
+/* tablets */
+@media screen and (min-width: 768px) {
+    /* .mainUL {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+    .mainUL > li {
+        margin: 10px auto 10px auto;
+    } */
+  }
