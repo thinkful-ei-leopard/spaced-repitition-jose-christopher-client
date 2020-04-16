@@ -61,15 +61,20 @@ render() {
     } else if(this.context.isCorrect === false){
         return (
             <>
+            <p className='DisplayScore p'>Your total score is: {resp.totalScore}</p>
             <h2>Good try, but not quite right :(</h2>
-            <p className='main .DisplayScore p'>Your total score is: {resp.totalScore}</p>
-            <p className='main .DisplayFeedback p'>The correct translation for {this.context.nextWord} was {resp.answer} and you chose {this.context.userGuess}!</p>
+            <p className='DisplayFeedback p'>The correct translation for {this.context.nextWord} was {resp.answer} and you chose {this.context.userGuess}!</p>
             <button>Try another word!</button>
             </>
         )
     } else {
         return (
-            <p>correct</p>
+            <>
+            <h2>You were correct! :D</h2>
+            <p className='DisplayScore p'>Your total score is: {resp.totalScore}</p>
+            <p className='DisplayFeedback p'>The correct translation for {this.context.nextWord} was {resp.answer} and you chose {this.context.userGuess}!</p>
+            <button>Try another word!</button>
+            </>
         )
     }
 }
