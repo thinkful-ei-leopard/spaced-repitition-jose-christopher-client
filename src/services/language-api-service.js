@@ -23,6 +23,9 @@ const LanguageApiService = {
         'content-type': 'application/json',
         'authorization': `bearer ${TokenService.getAuthToken()}`
       },
+      body: JSON.stringify({
+        guess: answer
+      })
     })
       .then(res => 
         (!res.ok)

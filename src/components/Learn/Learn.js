@@ -6,6 +6,8 @@ export default class Learn extends Component {
 static contextType = LearnContext
 
 componentDidMount() {
+    this.context.resetCorrectValue()
+
     LanguageService.getLanguageHead()
     .then( res => {
         this.context.setLearnValues(
@@ -17,18 +19,36 @@ componentDidMount() {
     })
 }
 
+submitGuess = event => {
+    event.preventDefault()
+    let guess = event.target.guessInput.value
+
+    console.log(guess)
+    LanguageService.postGuess(guess)
+    .then(res => {
+        this.context.setCorrectValue(res.isCorrect)
+        this.context.setGuessResponse(res)
+        console.log(res)
+    })
+}
+
+componentWillUnmount() {
+    this.context.resetCorrectValue()
+}
+
 render() {
+    console.log(this.context.state)
     return (
         <>
         <h2>Translate the word:
         </h2>
         <span>{this.context.nextWord}</span>
         <p>Your total score is: {this.context.totalScore}</p>
-        <form className='main form'>
+        <form className='main form' onSubmit={this.submitGuess}>
             <label htmlFor='learn-guess-input'>
                 What's the translation for this word?
             </label>
-            <input id='learn-guess-input' type='text' required>
+            <input id='learn-guess-input' type='text' name='guessInput' required>
             </input>
             <button type='submit'>Submit your answer</button>
         </form>
