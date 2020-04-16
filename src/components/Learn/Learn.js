@@ -22,8 +22,8 @@ componentDidMount() {
 submitGuess = event => {
     event.preventDefault()
     let guess = event.target.guessInput.value
+    this.context.saveGuess(guess)
 
-    console.log(guess)
     LanguageService.postGuess(guess)
     .then(res => {
         this.context.setCorrectValue(res.isCorrect)
@@ -38,6 +38,8 @@ componentWillUnmount() {
 
 render() {
     console.log(this.context.state)
+    let resp = this.context.guessResponse || {}
+    if(this.context.isCorrect === null) {
     return (
         <>
         <h2>Translate the word:
@@ -56,5 +58,19 @@ render() {
         <p>You have answered this word incorrectly {this.context.wordIncorrectCount} times.</p>
         </>
     )
+    } else if(this.context.isCorrect === false){
+        return (
+            <>
+            <h2>Good try, but not quite right :(</h2>
+            <p className='main .DisplayScore p'>Your total score is: {resp.totalScore}</p>
+            <p className='main .DisplayFeedback p'>The correct translation for {this.context.nextWord} was {resp.answer} and you chose {this.context.userGuess}!</p>
+            <button>Try another word!</button>
+            </>
+        )
+    } else {
+        return (
+            <p>correct</p>
+        )
+    }
 }
 }

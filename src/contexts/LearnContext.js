@@ -8,10 +8,12 @@ const LearnContext = React.createContext({
     isCorrect: null,
     state: {},
     guessResponse: {},
+    userGuess: '',
     setLearnValues: () => {},
     setCorrectValue: () => {},
     resetCorrectValue: () => {},
     setGuessResponse: () => {},
+    saveGuess: () => {},
 })
 
 export default LearnContext
@@ -24,6 +26,7 @@ export class LearnProvider extends React.Component {
         wordIncorrectCount: 0,
         isCorrect: null,
         guessResponse: {},
+        userGuess: ''
     }
 
     setLearnValues = (nextWord, totalScore, wordCorrectCount, wordIncorrectCount) => {
@@ -47,6 +50,10 @@ export class LearnProvider extends React.Component {
         this.setState({ isCorrect: null })
     }
 
+    saveGuess = value => {
+        this.setState({ userGuess: value })
+    }
+
     render() {
         const value = {
             nextWord: this.state.nextWord,
@@ -60,6 +67,8 @@ export class LearnProvider extends React.Component {
             resetCorrectValue: this.resetCorrectValue,
             guessResponse: this.state.guessResponse,
             setGuessResponse: this.setGuessResponse,
+            saveGuess: this.saveGuess,
+            userGuess: this.state.userGuess,
         }
 
         return (
