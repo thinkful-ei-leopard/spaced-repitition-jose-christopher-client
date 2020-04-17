@@ -1,18 +1,7 @@
-/* .learnH2 {
-    text-align: center;
-    color: white;
-} */
-
 .learnH2 {
     text-align: center;
     color: black;
 }
-
-/* .learnSpan {
-    text-align: center;
-    font-weight: bold;
-    color: white;
-} */
 
 .learnSpan {
     text-align: center;
@@ -25,17 +14,6 @@
     flex-direction: column;
     padding: 4px;
 }
-
-/* #learn-guess-input {
-    border: none;
-    border-bottom: 3px solid black;
-    padding: 6px;
-    font-weight: bold;
-    text-align: center;
-    background-color: #AA151B;
-    color: white;
-    font-size: 16px;
-} */
 
 #learn-guess-input {
     border: none;
@@ -52,7 +30,7 @@
     align-self: center;
     padding: 10px;
     border: 1px solid black;
-    background-color: black;
+    background-color: #AA151B;
     color: white;
     font-weight: bold;
     border-radius: 8px;
@@ -65,33 +43,16 @@
     color: black;
   }
 
-/* .learnForm > label {
-    font-weight: bold;
-    color: white;
-} */
-
 .learnForm > label {
     font-weight: bold;
     color: black;
 }
-
-/* .correctPara {
-    margin-top: 10px;
-    font-weight: bold;
-    color: white;
-} */
 
 .correctPara {
     margin-top: 10px;
     font-weight: bold;
     color: black;
 }
-
-/* .incorrectPara {
-    margin-top: 10px;
-    font-weight: bold;
-    color: white;
-} */
 
 .incorrectPara {
     margin-top: 10px;
@@ -115,39 +76,20 @@
     color: black;
 }
 
-/* .displayFeedback {
-    font-weight: bold;
-    padding: 4px;
-    color: white;
-} */
-
 .displayFeedback {
     font-weight: bold;
     padding: 4px;
     color: black;
 }
 
-/* .displayScore {
-    color: white;
-} */
-
 .displayScore {
     color: black;
 }
-
-/* .learnH2Render {
-    color: white;
-    margin-top: 70px;
-} */
 
 .learnH2Render {
     color: black;
     margin-top: 70px;
 }
-
-/* .totalPara {
-    color: white;
-} */
 
 .totalPara {
     color: black;
