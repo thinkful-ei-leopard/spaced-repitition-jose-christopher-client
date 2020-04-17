@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import LearnContext from '../../contexts/LearnContext'
 import LanguageService from '../../services/language-api-service'
+import './Learn.css'
 
 export default class Learn extends Component {
 static contextType = LearnContext
@@ -52,16 +53,15 @@ componentWillUnmount() {
 }
 
 render() {
-    console.log(this.context.state)
     let resp = this.context.guessResponse || {}
     if(this.context.isCorrect === null) {
     return (
         <>
-        <h2>Translate the word:
+        <h2 className='learnH2'>Translate the word:
         </h2>
-        <span>{this.context.nextWord}</span>
-        <p>Your total score is: {this.context.totalScore}</p>
-        <form className='main form' onSubmit={this.submitGuess}>
+        <span className='learnSpan' aria-live='polite' lang='es'>{this.context.nextWord}</span>
+        <p className='totalPara'>Your total score is: {this.context.totalScore}</p>
+        <form className='main form learnForm' onSubmit={this.submitGuess}>
             <label htmlFor='learn-guess-input'>
                 What's the translation for this word?
             </label>
@@ -69,26 +69,26 @@ render() {
             </input>
             <button type='submit'>Submit your answer</button>
         </form>
-        <p>You have answered this word correctly {this.context.wordCorrectCount} times.</p>
-        <p>You have answered this word incorrectly {this.context.wordIncorrectCount} times.</p>
+        <p className='correctPara'>You have answered this word correctly {this.context.wordCorrectCount} times.</p>
+        <p className='incorrectPara'>You have answered this word incorrectly {this.context.wordIncorrectCount} times.</p>
         </>
     )
     } else if(this.context.isCorrect === false){
         return (
             <>
+            <h2 className='learnH2Render'>Good try, but not quite right :(</h2>
             <p className='displayScore'>Your total score is: {resp.totalScore}</p>
-            <h2>Good try, but not quite right :(</h2>
             <p className='displayFeedback'>The correct translation for {this.context.nextWord} was {resp.answer} and you chose {this.context.userGuess}!</p>
-            <button onClick={this.handleAnotherWord}>Try another word!</button>
+            <button onClick={this.handleAnotherWord} className='learnButton'>Try another word!</button>
             </>
         )
     } else {
         return (
             <>
-            <h2>You were correct! :D</h2>
+            <h2 className='learnH2Render'>You were correct! :D</h2>
             <p className='displayScore'>Your total score is: {resp.totalScore}</p>
             <p className='displayFeedback'>The correct translation for {this.context.nextWord} was {resp.answer} and you chose {this.context.userGuess}!</p>
-            <button onClick={this.handleAnotherWord}>Try another word!</button>
+            <button onClick={this.handleAnotherWord} className='learnButton'>Try another word!</button>
             </>
         )
     }

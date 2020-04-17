@@ -45,7 +45,7 @@ class Header extends Component {
       <header>
         <h1 className='hablaH1'>
           <Link to='/' className='hablaLink'>
-            Habla
+            habla
           </Link>
         </h1>
         {TokenService.hasAuthToken()

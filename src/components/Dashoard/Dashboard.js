@@ -20,9 +20,6 @@ export class Dashboard extends Component {
 
 
   render() {
-    console.log(this.context.state)
-    console.log(this.context.language)
-    console.log(this.context.words)
     const renderWordList = this.context.words.map(wordObject => {
       return (
         <li className='main section li' key={wordObject.id}>

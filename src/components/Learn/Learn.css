@@ -1,0 +1,95 @@
+.learnH2 {
+    text-align: center;
+    color: white;
+}
+
+.learnSpan {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.learnForm {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+#learn-guess-input {
+    border: none;
+    border-bottom: 3px solid black;
+    padding: 6px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #AA151B;
+    color: white;
+}
+
+.learnForm > button {
+    align-self: center;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.learnForm > button:hover {
+    background-color: #F1BF00;
+    color: black;
+  }
+
+.learnForm > label {
+    font-weight: bold;
+    color: white;
+}
+
+.correctPara {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.incorrectPara {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.learnButton {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.learnButton:hover {
+    background-color: #F1BF00;
+    color: black;
+}
+
+.displayFeedback {
+    font-weight: bold;
+    padding: 4px;
+    color: white;
+}
+
+.displayScore {
+    color: white;
+}
+
+.learnH2Render {
+    color: white;
+    margin-top: 70px;
+}
+
+.totalPara {
+    color: white;
+}
