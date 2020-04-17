@@ -1,12 +1,23 @@
-.learnH2 {
+/* .learnH2 {
     text-align: center;
     color: white;
+} */
+
+.learnH2 {
+    text-align: center;
+    color: black;
 }
+
+/* .learnSpan {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+} */
 
 .learnSpan {
     text-align: center;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 .learnForm {
@@ -15,7 +26,7 @@
     padding: 4px;
 }
 
-#learn-guess-input {
+/* #learn-guess-input {
     border: none;
     border-bottom: 3px solid black;
     padding: 6px;
@@ -23,6 +34,18 @@
     text-align: center;
     background-color: #AA151B;
     color: white;
+    font-size: 16px;
+} */
+
+#learn-guess-input {
+    border: none;
+    border-bottom: 3px solid black;
+    padding: 6px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 16px;
 }
 
 .learnForm > button {
@@ -42,21 +65,38 @@
     color: black;
   }
 
-.learnForm > label {
+/* .learnForm > label {
     font-weight: bold;
     color: white;
+} */
+
+.learnForm > label {
+    font-weight: bold;
+    color: black;
 }
+
+/* .correctPara {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+} */
 
 .correctPara {
     margin-top: 10px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
+
+/* .incorrectPara {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+} */
 
 .incorrectPara {
     margin-top: 10px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 .learnButton {
@@ -75,21 +115,48 @@
     color: black;
 }
 
-.displayFeedback {
+/* .displayFeedback {
     font-weight: bold;
     padding: 4px;
     color: white;
+} */
+
+.displayFeedback {
+    font-weight: bold;
+    padding: 4px;
+    color: black;
 }
+
+/* .displayScore {
+    color: white;
+} */
 
 .displayScore {
-    color: white;
+    color: black;
 }
 
-.learnH2Render {
+/* .learnH2Render {
     color: white;
+    margin-top: 70px;
+} */
+
+.learnH2Render {
+    color: black;
     margin-top: 70px;
 }
 
-.totalPara {
+/* .totalPara {
     color: white;
+} */
+
+.totalPara {
+    color: black;
+}
+
+.correctPara {
+    margin-top: 50px;
+}
+
+#learn-guess-input {
+    margin-top: 20px;
 }

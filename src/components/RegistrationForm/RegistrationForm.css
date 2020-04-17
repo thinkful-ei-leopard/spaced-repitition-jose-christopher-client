@@ -1,13 +1,11 @@
 .reg-form {
   display: flex;
   flex-direction: column;
-  border: 3px solid black;
   min-width: 80%;
   max-width: 90%;
   margin: 20px auto 30px auto;
   padding: 30px;
   border-radius: 8px;
-  background-color: #AA151B;
 }
 
 .reg-div{
@@ -30,15 +28,19 @@
 
 .regInput {
   border: none;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid black;
   padding: 8px;
-  background-color: #AA151B;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .regLabel {
   font-weight: bold;
-  color: white;
-  /* width: ; */
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .regButton {
@@ -59,16 +61,14 @@
 }
 
 .regLink {
-  color: white;
+  color: black;
   font-weight: bold;
   transition-duration: 0.4s;
 }
 
 .regLink:hover {
-  color: #F1BF00;
-  font-size: 18px;
+  color: #AA151B;
 }
-
 
 /* tablets */
 @media screen and (min-width: 768px) {

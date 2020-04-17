@@ -18,7 +18,6 @@ header {
 
 .hablaLink:hover {
   color: #AA151B;
-  font-size: 35px;
 }
 
 .loginLink {
@@ -54,7 +53,7 @@ header {
 }
 
 .logoutLink {
-  padding: 5px;
+  padding: 8px;
   border: 1px solid black;
   color: white;
   border-radius: 8px;

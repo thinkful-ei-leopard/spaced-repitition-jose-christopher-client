@@ -19,7 +19,7 @@ class LoginForm extends Component {
   handleSubmit = ev => {
     ev.preventDefault()
     const { username, password } = ev.target
-
+    this.context.setLoading()
     this.setState({ error: null })
 
     AuthApiService.postLogin({
@@ -39,12 +39,20 @@ class LoginForm extends Component {
 
   componentDidMount() {
     this.firstInput.current.focus()
+    this.context.clearLoading()
+  }
+
+  componentWillUnmount() {
+    this.context.clearLoading()
   }
 
   render() {
     const { error } = this.state
 
     return (
+      <>
+      {this.context.isLoading && 
+      this.state.error === null ? <div id="loader"></div> :
       <form
         className='LoginForm'
         onSubmit={this.handleSubmit}
@@ -83,7 +91,8 @@ class LoginForm extends Component {
         <Button type='submit'>
           Login
         </Button>
-      </form>
+      </form>}
+      </>
     )
   }
 }
