@@ -32,6 +32,21 @@ submitGuess = event => {
     })
 }
 
+handleAnotherWord = event => {
+    event.preventDefault()
+
+    LanguageService.getLanguageHead()
+    .then(res => {
+        this.context.resetCorrectValue()
+        this.context.setLearnValues(
+            res.nextWord,
+            res.totalScore,
+            res.wordCorrectCount,
+            res.wordIncorrectCount
+        )
+    })
+}
+
 componentWillUnmount() {
     this.context.resetCorrectValue()
 }
@@ -64,7 +79,7 @@ render() {
             <p className='displayScore'>Your total score is: {resp.totalScore}</p>
             <h2>Good try, but not quite right :(</h2>
             <p className='displayFeedback'>The correct translation for {this.context.nextWord} was {resp.answer} and you chose {this.context.userGuess}!</p>
-            <button>Try another word!</button>
+            <button onClick={this.handleAnotherWord}>Try another word!</button>
             </>
         )
     } else {
@@ -73,7 +88,7 @@ render() {
             <h2>You were correct! :D</h2>
             <p className='displayScore'>Your total score is: {resp.totalScore}</p>
             <p className='displayFeedback'>The correct translation for {this.context.nextWord} was {resp.answer} and you chose {this.context.userGuess}!</p>
-            <button>Try another word!</button>
+            <button onClick={this.handleAnotherWord}>Try another word!</button>
             </>
         )
     }
