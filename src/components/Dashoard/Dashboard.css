@@ -40,11 +40,12 @@
 .startPracticeLink {
     color: white;
     font-weight: bold;
-    border: 1px solid black;
+    border: none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
     max-width: 30%;
     margin: 0px auto 20px auto;
     padding: 8px;
-    border-radius: 8px;
     background-color: #AA151B;
     transition-duration: 0.4s;
 }

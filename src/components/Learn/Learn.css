@@ -6,7 +6,7 @@
 .learnSpan {
     text-align: center;
     font-weight: bold;
-    color: black;
+    color: #AA151B;
 }
 
 .learnForm {
@@ -29,11 +29,11 @@
 .learnForm > button {
     align-self: center;
     padding: 10px;
-    border: 1px solid black;
+    border: none;
+    border-left: 2px solid black;
     background-color: #AA151B;
     color: white;
     font-weight: bold;
-    border-radius: 8px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -52,12 +52,14 @@
     margin-top: 10px;
     font-weight: bold;
     color: black;
+    font-size: 14px;
 }
 
 .incorrectPara {
     margin-top: 10px;
     font-weight: bold;
     color: black;
+    font-size: 14px;
 }
 
 .learnButton {
