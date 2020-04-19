@@ -1,47 +1,50 @@
-# Spaced Repetition Capstone
+# habla
 
-## Setup
+# Summary
+- As a user:
 
-To setup the application
+    - As a prospective user, I can register an account so that I can login and use the application.
+    ![Alt text](./README-images/signUp.png?raw=true "sign up")
 
-1. Fork and clone the project to your machine
-2. `npm install`. This will also install the application *Cypress.io* for running browser integration tests
+    - As a registered user, I can login to the application so that I can begin learning
+    ![Alt text](./README-images/login.png?raw=true "login page")
 
-The project expects you have the Spaced repetition API project setup and running on http://localhost:8000.
+    - As a logged in user, I'm directed to a dashboard where I can see my progress learning my language.
+    ![Alt text](./README-images/dashboard.png?raw=true "dashboard page")
 
-Find instructions to setup the API here https://github.com/Thinkful-Ed/spaced-repetition-api.
+    - As a logged in user, I can learn words using spaced repetition.
+     ![Alt text](./README-images/learn.png?raw=true "learn page")
 
-## Running project
+    - As a logged in user, I can see feedback on my submitted answers.
+    ![Alt text](./README-images/feedback.png?raw=true "feedback page")
 
-This is a `create-react-app` project so `npm start` will start the project in development mode with hot reloading by default.
+    - As a logged in user, I can learn another word after receiving feedback from my previous answer
 
-## Running the tests
+# Tech used
+- Back-end:
 
-This project uses [Cypress IO](https://docs.cypress.io) for integration testing using the Chrome browser.
+    - Database: Postgres
 
-Cypress has the following expectations:
+    - Database language: SQL
 
-- You have cypress installed (this is a devDependency of the project)
-- You have your application running at http://localhost:3000.
-  - You can change the address of this expectation in the `./cypress.json` file.
-- Your `./src/config.js` is using http://localhost:8000/api as the `API_ENDPOINT`
+    - Server: Node.js
 
-To start the tests run the command:
+    - server framework: Express.js
 
-```bash
-npm run cypress:open
-```
+    - Query Builder: Knex.js
 
-On the first run of this command, the cypress application will verify its install. Any other runs after this, the verification will be skipped.
+    - testing: Mocha, Chai
 
-The command will open up the Cypress application which reads tests from the `./cypress/integration/` directory. You can then run individual tests by clicking on the file names or run all tests by clicking the "run all tests" button in the cypress GUI.
+- Front-end:
 
-Tests will assert against your running localhost client application.
+    - React.js
 
-You can also start all of the tests in the command line only (not using the GUI) by running the command:
+    - HTML5, CSS3
 
-```bash
-npm run cypress:run
-```
+    - testing: cypress
 
-This will save video recordings of the test runs in the directory `./cypress/videos/`.
+- deployment:
+
+    - Heroku & Zeit
+
+# Site:  https://spaced-repitition-app.now.sh/
