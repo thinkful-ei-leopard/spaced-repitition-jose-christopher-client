@@ -18,7 +18,7 @@ class RegistrationRoute extends Component {
     return (
       <section>
         <p className='hablaInfo'>
-          Practice learning a language with the spaced reptition revision technique.
+          Practice learning a language with the Spaced Repetition revision technique.
         </p>
         <h2 className='signUpH2'>Sign up</h2>
         <RegistrationForm
