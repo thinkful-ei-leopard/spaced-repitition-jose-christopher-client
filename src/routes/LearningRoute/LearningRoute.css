@@ -2,7 +2,7 @@
   margin: 100px auto 50px auto;
   /* border: none; */
   padding: 25px;
-  height: 385px;
+  height: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,6 +18,6 @@
 /* tablets */
 @media screen and (min-width: 768px) {
     .learnSection {
-      height: 385px;
+      height: 400px;
     }
   }
