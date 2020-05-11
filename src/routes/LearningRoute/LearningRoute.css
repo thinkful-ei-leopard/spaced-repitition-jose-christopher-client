@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   line-height: 1.5;
+  min-width: 70%;
   max-width: 90%;
   transition-duration: 0.4s;
   border-radius: 30px;
@@ -15,6 +16,7 @@
 /* tablets */
 @media screen and (min-width: 768px) {
     .learnSection {
+      min-width: 20%;
       height: 420px;
     }
   }
