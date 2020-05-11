@@ -65,7 +65,7 @@ render() {
             <label htmlFor='learn-guess-input'>
                 What's the translation for this word?
             </label>
-            <input id='learn-guess-input' type='text' name='guessInput' required placeholder='Insert answer here!'>
+            <input id='learn-guess-input' type='text' name='guessInput' required placeholder='Insert your answer here!'>
             </input>
             <button type='submit'>Submit your answer</button>
         </form>

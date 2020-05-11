@@ -3,7 +3,6 @@ import { Route, Redirect } from 'react-router-dom'
 import UserContext from '../../contexts/UserContext'
 
 export default function PrivateRoute({ component, ...props }) {
-  console.log(UserContext)
   const Component = component
   return (
     <Route
