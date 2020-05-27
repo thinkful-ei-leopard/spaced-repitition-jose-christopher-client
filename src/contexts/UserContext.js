@@ -64,11 +64,11 @@ export class UserProvider extends Component {
   }
 
   setLoading = () => {
-    this.setState({ setLoading: true })
+    this.setState({ isLoading: true })
   }
 
   clearLoading = () => {
-    this.setState({ setLoading: null })
+    this.setState({ isLoading: null })
   }
 
   processLogin = authToken => {
