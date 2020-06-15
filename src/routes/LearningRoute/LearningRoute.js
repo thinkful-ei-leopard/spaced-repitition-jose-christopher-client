@@ -5,7 +5,7 @@ import './LearningRoute.css'
 class LearningRoute extends Component {
   render() {
     return (
-      <section className='learnSection'>
+      <section className='learnSection flip-card'>
         <Learn />
       </section>
     );

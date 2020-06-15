@@ -6,7 +6,10 @@ import './Learn.css'
 export default class Learn extends Component {
 static contextType = LearnContext
 
+state ={touched: false}
+
 componentDidMount() {
+    this.setState({touched: false})
     this.context.resetCorrectValue()
 
     LanguageService.getLanguageHead()
@@ -20,6 +23,11 @@ componentDidMount() {
     })
 }
 
+handleViewScore = () => {
+    this.setState({touched: !this.state.touched})
+    console.log(this.state.touched)
+}
+
 submitGuess = event => {
     event.preventDefault()
     let guess = event.target.guessInput.value
@@ -29,7 +37,6 @@ submitGuess = event => {
     .then(res => {
         this.context.setCorrectValue(res.isCorrect)
         this.context.setGuessResponse(res)
-        console.log(res)
     })
 }
 
@@ -49,6 +56,7 @@ handleAnotherWord = event => {
 }
 
 componentWillUnmount() {
+    this.setState({touched: false})
     this.context.resetCorrectValue()
 }
 
@@ -57,10 +65,11 @@ render() {
     if(this.context.isCorrect === null) {
     return (
         <>
+        {this.state.touched === false ? 
+        <>
         <h2 className='learnH2'>Translate the word:
         </h2>
         <span className='learnSpan' aria-live='polite' lang='es'>{this.context.nextWord}</span>
-        <p className='totalPara'>Your total score is: {this.context.totalScore}</p>
         <form className='main form learnForm' onSubmit={this.submitGuess}>
             <label htmlFor='learn-guess-input'>
                 What's the translation for this word?
@@ -69,8 +78,18 @@ render() {
             </input>
             <button type='submit'>Submit your answer</button>
         </form>
+        </>
+
+        : 
+        <>
+        <p className='totalPara'>Your total score is: {this.context.totalScore}</p>
         <p className='correctPara'>You have answered this word correctly {this.context.wordCorrectCount} times.</p>
         <p className='incorrectPara'>You have answered this word incorrectly {this.context.wordIncorrectCount} times.</p>
+        </>
+    }
+        <button onClick={this.handleViewScore}>
+            {this.state.touched ? 'view word' : 'view score'}
+        </button>
         </>
     )
     } else if(this.context.isCorrect === false){
