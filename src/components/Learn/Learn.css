@@ -1,6 +1,7 @@
 .learnH2 {
     text-align: center;
     color: black;
+    margin-top: 3.5rem;
 }
 
 .learnSpan {
@@ -95,14 +96,23 @@
 
 .totalPara {
     color: black;
+    margin-top: 4.5rem;
 }
 
 .correctPara {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #learn-guess-input {
     margin-top: 20px;
+}
+
+.incorrectPara, .correctPara {
+    width: 70%;
+}
+
+.views {
+    margin-top: 5rem;
 }
 
 /* .flip-card-inner {

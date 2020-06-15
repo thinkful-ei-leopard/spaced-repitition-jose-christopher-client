@@ -87,7 +87,7 @@ render() {
         <p className='incorrectPara'>You have answered this word incorrectly {this.context.wordIncorrectCount} times.</p>
         </>
     }
-        <button onClick={this.handleViewScore}>
+        <button onClick={this.handleViewScore} className='views'>
             {this.state.touched ? 'view word' : 'view score'}
         </button>
         </>
