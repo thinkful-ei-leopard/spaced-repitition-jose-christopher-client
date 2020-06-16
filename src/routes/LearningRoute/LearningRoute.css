@@ -1,7 +1,7 @@
 .learnSection {
   margin: 100px auto 50px auto;
   padding: 25px;
-  min-height: 420px;
+  max-height: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,16 +13,10 @@
   box-shadow: .1rem .2rem .8rem .1rem #888888;
 }
 
-/* .flip-card {
-  background-color: transparent;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-} */
-
 /* tablets */
 @media screen and (min-width: 768px) {
     .learnSection {
       min-width: 20%;
-      height: 420px;
+      /* height: 420px; */
     }
-  }
+}

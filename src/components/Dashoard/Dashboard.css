@@ -42,13 +42,13 @@
     color: white;
     font-weight: bold;
     border: none;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    max-width: 30%;
+    border-radius: 0.4rem;
+    max-width: 40%;
     margin: 0px auto 20px auto;
-    padding: 8px;
+    padding: 10px;
     background-color: #AA151B;
     transition-duration: 0.4s;
+    text-align: center;
 }
 
 .startPracticeLink:hover {

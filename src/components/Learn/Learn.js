@@ -25,7 +25,6 @@ componentDidMount() {
 
 handleViewScore = () => {
     this.setState({touched: !this.state.touched})
-    console.log(this.state.touched)
 }
 
 submitGuess = event => {
@@ -87,9 +86,12 @@ render() {
         <p className='incorrectPara'>You have answered this word incorrectly {this.context.wordIncorrectCount} times.</p>
         </>
     }
-        <button onClick={this.handleViewScore} className='views'>
-            {this.state.touched ? 'view word' : 'view score'}
-        </button>
+        {this.state.touched ? 
+        <button className='wordButton' 
+        onClick={this.handleViewScore}>view word</button> 
+        : 
+        <button className='scoreButton' 
+        onClick={this.handleViewScore}>view score</button>}
         </>
     )
     } else if(this.context.isCorrect === false){

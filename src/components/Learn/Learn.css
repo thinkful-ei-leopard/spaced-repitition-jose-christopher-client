@@ -1,7 +1,7 @@
 .learnH2 {
     text-align: center;
     color: black;
-    margin-top: 3.5rem;
+    margin-top: 2rem;
 }
 
 .learnSpan {
@@ -25,6 +25,10 @@
     background-color: white;
     color: black;
     font-size: 16px;
+}
+
+#learn-guess-input:focus {
+    outline: 0;
 }
 
 .learnForm > button {
@@ -51,14 +55,12 @@
 
 .correctPara {
     margin-top: 10px;
-    font-weight: bold;
     color: black;
     font-size: 14px;
 }
 
 .incorrectPara {
     margin-top: 10px;
-    font-weight: bold;
     color: black;
     font-size: 14px;
 }
@@ -95,11 +97,12 @@
 }
 
 .totalPara {
+    font-weight: bold;
     color: black;
     margin-top: 4.5rem;
 }
 
-.correctPara {
+.correctPara, .incorrectPara {
     margin-top: 30px;
 }
 
@@ -111,29 +114,35 @@
     width: 70%;
 }
 
-.views {
-    margin-top: 5rem;
+.scoreButton {
+    margin-top: 5.5rem;
 }
 
-/* .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+.wordButton {
+    margin-top: 5.5rem;
 }
 
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
+.wordButton, .scoreButton {
+    padding: 10px;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #AA151B;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
 
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-   */
+.wordButton, .scoreButton:focus {
+    outline: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .scoreButton {
+        margin-top: 6rem;
+    }
+
+    .wordButton {
+        margin-top: 6.2rem;
+    }
+}
