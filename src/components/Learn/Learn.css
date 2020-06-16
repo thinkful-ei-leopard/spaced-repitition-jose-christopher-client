@@ -1,6 +1,7 @@
 .learnH2 {
     text-align: center;
     color: black;
+    margin-top: 1rem;
 }
 
 .learnSpan {
@@ -24,6 +25,10 @@
     background-color: white;
     color: black;
     font-size: 16px;
+}
+
+#learn-guess-input:focus {
+    outline: 0;
 }
 
 .learnForm > button {
@@ -50,14 +55,12 @@
 
 .correctPara {
     margin-top: 10px;
-    font-weight: bold;
     color: black;
     font-size: 14px;
 }
 
 .incorrectPara {
     margin-top: 10px;
-    font-weight: bold;
     color: black;
     font-size: 14px;
 }
@@ -94,13 +97,52 @@
 }
 
 .totalPara {
+    font-weight: bold;
     color: black;
+    margin-top: 4.5rem;
 }
 
-.correctPara {
-    margin-top: 50px;
+.correctPara, .incorrectPara {
+    margin-top: 30px;
 }
 
 #learn-guess-input {
     margin-top: 20px;
+}
+
+.incorrectPara, .correctPara {
+    width: 70%;
+}
+
+.scoreButton {
+    margin-top: 6rem;
+}
+
+.wordButton {
+    margin-top: 5.5rem;
+}
+
+.wordButton, .scoreButton {
+    padding: 10px;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #AA151B;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.wordButton, .scoreButton:focus {
+    outline: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .scoreButton {
+        margin-top: 7rem;
+    }
+
+    .wordButton {
+        margin-top: 6.2rem;
+    }
 }
