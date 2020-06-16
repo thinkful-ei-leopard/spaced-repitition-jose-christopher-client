@@ -1,7 +1,7 @@
 .learnH2 {
     text-align: center;
     color: black;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .learnSpan {
@@ -115,7 +115,7 @@
 }
 
 .scoreButton {
-    margin-top: 5.5rem;
+    margin-top: 6rem;
 }
 
 .wordButton {
@@ -139,7 +139,7 @@
 
 @media screen and (min-width: 768px) {
     .scoreButton {
-        margin-top: 6rem;
+        margin-top: 7rem;
     }
 
     .wordButton {
