@@ -8,6 +8,16 @@
   text-decoration: none;
 }
 
+input {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius:0px;
+}
+
+input:focus {
+  outline: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
