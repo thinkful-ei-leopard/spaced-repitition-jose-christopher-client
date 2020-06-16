@@ -51,6 +51,7 @@
   cursor: pointer;
   transition-duration: 0.4s;
   font-size: 12px;
+  margin: 10px auto 10px auto;
 }
 
 .regButton:hover {
