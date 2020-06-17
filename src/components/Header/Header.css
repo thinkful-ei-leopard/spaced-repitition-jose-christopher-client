@@ -3,11 +3,6 @@
   flex-direction: column;
 }
 
-.hablaInfo {
-  margin: 35px auto 5px auto;
-  font-weight: bold;
-}
-
 .hablaH1 {
   padding: 10px;
 }
@@ -53,7 +48,6 @@
   color: black;
   font-weight: bold;
   transition-duration: 0.4s;
-  border-right: 2px solid black;
 }
 
 .logoutDiv {
@@ -65,11 +59,12 @@
 
 .userSpan {
   font-weight: bold;
+  cursor: default;
+  color: #373a47;
 }
 
 .logoutLink:hover {
-  background-color: #F1BF00;
-  color: black;
+  color: #AA151B;
 }
 
 
