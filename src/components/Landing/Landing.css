@@ -1,0 +1,49 @@
+.infoCont {
+    margin: 30px auto 25px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landingLink {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+}
+
+.landingLink:hover {
+    color: burlywood;
+}
+
+.hablaInfo {
+    font-weight: bold;
+    color: darkgrey;
+}
+
+.globe {
+    margin: 0px auto 0px auto;
+    width: 100%;
+    min-height: 300px;
+    max-height: 700px;
+}
+
+.globe:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    .globe {
+        height: 620px;
+    }
+}
+
+@media screen and (min-height: 812px) {
+    .infoCont {
+        margin-top: 50px;
+    }
+
+    .globe {
+        margin-top: 40px;
+    }
+}

@@ -1,10 +1,6 @@
-header {
+.loginLinks {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 10px;
-  height: 70px;
-  margin-bottom: 30px;
+  flex-direction: column;
 }
 
 .hablaH1 {
@@ -22,7 +18,6 @@ header {
 
 .loginLink {
   border: none;
-  border-left: 2px solid black;
   color: black;
   padding: 5px;
   font-weight: bold;
@@ -34,20 +29,17 @@ header {
   padding: 5px;
   border: none;
   color: black;
-  border-right: 2px solid black;
   font-weight: bold;
   transition-duration: 0.4s;
   margin-left: 5px;
 }
 
 .signUpLink:hover {
-  background-color: #F1BF00;
-  color: black;
+  color: #AA151B;
 }
 
 .loginLink:hover {
-  background-color: #F1BF00;
-  color: black;
+  color: #AA151B;
 }
 
 .logoutLink {
@@ -56,11 +48,9 @@ header {
   color: black;
   font-weight: bold;
   transition-duration: 0.4s;
-  border-right: 2px solid black;
 }
 
 .logoutDiv {
-  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,13 +59,98 @@ header {
 
 .userSpan {
   font-weight: bold;
-}
-
-.logoutNav {
-  padding-top: 15px;
+  cursor: default;
+  color: #373a47;
 }
 
 .logoutLink:hover {
-  background-color: #F1BF00;
-  color: black;
+  color: #AA151B;
+}
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 28px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+}
+
+.bm-burger-button:focus {
+  outline: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: black;
+}
+
+.bm-burger-bars:focus {
+  outline: 0;
+}
+
+.bm-burger-bars:hover {
+  background: #AA151B;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: black;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: black;
+}
+
+
+
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: lightgrey;
+  /* padding: 2.5em 1.5em 0; */
+  padding: 40px;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 240px auto; */
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }

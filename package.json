@@ -9,9 +9,12 @@
     "classnames": "^2.2.6",
     "jwt-decode": "^2.2.0",
     "react": "^16.8.3",
+    "react-burger-menu": "^2.6.15",
     "react-dom": "^16.8.3",
+    "react-globe": "^4.0.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "three": "^0.117.1"
   },
   "scripts": {
     "start": "react-scripts start",

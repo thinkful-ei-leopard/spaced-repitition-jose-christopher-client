@@ -1,5 +1,5 @@
 .learnSection {
-  margin: 100px auto 50px auto;
+  margin: 50px auto 50px auto;
   padding: 25px;
   max-height: 420px;
   display: flex;
@@ -11,6 +11,25 @@
   transition-duration: 0.4s;
   border-radius: 30px;
   box-shadow: .5rem 1rem 1.8rem #888888;
+}
+
+.back-icon {
+  width: auto;
+  max-height: 27px;
+  margin: 80px auto 0px auto;
+}
+
+.back-icon:hover {
+  cursor: pointer;
+}
+
+.learnBack {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.learnBack:hover {
+  cursor: default;
 }
 
 /* tablets */
