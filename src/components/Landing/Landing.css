@@ -1,5 +1,5 @@
 .infoCont {
-    margin: 30px auto 25px auto;
+    margin: 270px auto 25px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,7 @@
     margin: 0px auto 0px auto;
     width: 100%;
     min-height: 400px;
-    /* max-height: 700px; */
+    display: none;
 }
 
 .globe:focus {
@@ -35,6 +35,11 @@
 @media screen and (min-width: 768px) {
     .globe {
         height: 620px;
+        display: initial;
+    }
+
+    .infoCont {
+        margin: 30px auto 25px auto;
     }
 }
 
