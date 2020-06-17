@@ -1,13 +1,19 @@
 import React from 'react'
 import ReactGlobe from 'react-globe'
+import {Link} from 'react-router-dom'
 import './Landing.css'
 
 function Landing() {
     return (
         <>
-        <p className='hablaInfo'>
-          Practice learning a language with the Spaced Repetition revision technique.
-        </p>
+        <div className='infoCont'>
+            <p className='hablaInfo'>
+                Practice learning a language with the Spaced Repetition revision technique.
+            </p>
+            <Link to='/register' 
+                className='landingLink'>Register
+            </Link>
+        </div>
         <div className='globe'>
             <ReactGlobe globeOptions={{
                     enableBackground: false,
