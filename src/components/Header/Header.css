@@ -1,10 +1,11 @@
-header {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
-  /* padding: 5px 10px;
-  height: 70px;
-  margin-bottom: 30px; */
+.loginLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.hablaInfo {
+  margin: 35px auto 5px auto;
+  font-weight: bold;
 }
 
 .hablaH1 {
@@ -22,7 +23,6 @@ header {
 
 .loginLink {
   border: none;
-  border-left: 2px solid black;
   color: black;
   padding: 5px;
   font-weight: bold;
@@ -34,20 +34,17 @@ header {
   padding: 5px;
   border: none;
   color: black;
-  border-right: 2px solid black;
   font-weight: bold;
   transition-duration: 0.4s;
   margin-left: 5px;
 }
 
 .signUpLink:hover {
-  background-color: #F1BF00;
-  color: black;
+  color: #AA151B;
 }
 
 .loginLink:hover {
-  background-color: #F1BF00;
-  color: black;
+  color: #AA151B;
 }
 
 .logoutLink {
@@ -60,7 +57,6 @@ header {
 }
 
 .logoutDiv {
-  /* margin-top: 15px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,10 +65,6 @@ header {
 
 .userSpan {
   font-weight: bold;
-}
-
-.logoutNav {
-  /* padding-top: 15px; */
 }
 
 .logoutLink:hover {
@@ -120,7 +112,7 @@ header {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: black;
 }
 
 
@@ -137,8 +129,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
+  background: lightgrey;
+  /* padding: 2.5em 1.5em 0; */
+  padding: 40px;
   font-size: 1.15em;
 }
 
@@ -151,6 +144,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item-list {
   color: #b8b7ad;
   padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 240px auto; */
 }
 
 /* Individual item */

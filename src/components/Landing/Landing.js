@@ -4,6 +4,10 @@ import './Landing.css'
 
 function Landing() {
     return (
+        <>
+        <p className='hablaInfo'>
+          Practice learning a language with the Spaced Repetition revision technique.
+        </p>
         <div className='globe'>
             <ReactGlobe globeOptions={{
                     enableBackground: false,
@@ -15,6 +19,7 @@ function Landing() {
                 }}
             />
         </div>
+        </>
     )
 }
 

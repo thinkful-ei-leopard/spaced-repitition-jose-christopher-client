@@ -17,9 +17,6 @@ class RegistrationRoute extends Component {
   render() {
     return (
       <section>
-        <p className='hablaInfo'>
-          Practice learning a language with the Spaced Repetition revision technique.
-        </p>
         <h2 className='signUpH2'>Sign up</h2>
         <RegistrationForm
           onRegistrationSuccess={this.handleRegistrationSuccess}

@@ -1,3 +1,9 @@
+.hablaInfo {
+    margin: 30px auto 25px auto;
+    font-weight: bold;
+    color: darkgrey;
+  }
+
 .globe {
     margin: 0px auto 0px auto;
     width: 100%;
@@ -11,6 +17,16 @@
 
 @media screen and (min-width: 768px) {
     .globe {
-        height: 700px;
+        height: 650px;
     }
-  }
+}
+
+@media screen and (min-height: 812px) {
+    .hablaInfo {
+        margin-top: 50px;
+    }
+
+    .globe {
+        margin-top: 40px;
+    }
+}
