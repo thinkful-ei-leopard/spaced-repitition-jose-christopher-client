@@ -1,0 +1,16 @@
+.globe {
+    margin: 0px auto 0px auto;
+    width: 100%;
+    min-height: 300px;
+    max-height: 700px;
+}
+
+.globe:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    .globe {
+        height: 700px;
+    }
+  }
