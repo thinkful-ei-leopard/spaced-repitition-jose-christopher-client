@@ -47,7 +47,7 @@ class Header extends Component {
             habla
           </Link>
         </h1>
-        <Menu right outerContainerId={"outer-container"}>
+        <Menu right outerContainerId={"outer-container"} >
           {TokenService.hasAuthToken()
             ? this.renderLogoutLink()
             : this.renderLoginLink()}
