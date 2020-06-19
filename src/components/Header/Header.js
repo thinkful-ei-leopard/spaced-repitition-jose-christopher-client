@@ -8,8 +8,27 @@ import {slide as Menu} from 'react-burger-menu'
 class Header extends Component {
   static contextType = UserContext
 
+  state = {open: false}
+
+  componentDidMount() {
+    this.setState({ open: false })
+  }
+
+  componentWillUnmount() {
+    this.setState({ open: false })
+  }
+
+  handleLinkClick = () => {
+    this.setState({ open: false })
+  }
+
   handleLogoutClick = () => {
     this.context.processLogout()
+    this.setState({open: false})
+  }
+
+  handleStateChange(state) {
+    this.setState({ open: state.isOpen })
   }
 
   renderLogoutLink() {
@@ -32,9 +51,9 @@ class Header extends Component {
   renderLoginLink() {
     return (
       <>
-        <Link to='/login' className='loginLink'>Login</Link>
+        <Link to='/login' className='loginLink' onClick={this.handleLinkClick}>Login</Link>
         {' '}
-        <Link to='/register' className='signUpLink'>Sign up</Link>
+        <Link to='/register' className='signUpLink' onClick={this.handleLinkClick}>Sign up</Link>
       </>
     )
   }
@@ -47,7 +66,8 @@ class Header extends Component {
             habla
           </Link>
         </h1>
-        <Menu right outerContainerId={"outer-container"} >
+        <Menu right outerContainerId={"outer-container"} 
+        isOpen={this.state.open} onStateChange={(state) => this.handleStateChange(state)}>
           {TokenService.hasAuthToken()
             ? this.renderLogoutLink()
             : this.renderLoginLink()}
