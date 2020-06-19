@@ -87,11 +87,11 @@ render() {
         </>
     }
         {this.state.touched ? 
-        <button className='wordButton' 
-        onClick={this.handleViewScore}>view word</button> 
+        <div className='scoreButton' 
+        onClick={this.handleViewScore}><span className='scoreSpan'>word</span></div> 
         : 
-        <button className='scoreButton' 
-        onClick={this.handleViewScore}>view score</button>}
+        <div className='scoreButton' 
+        onClick={this.handleViewScore}><span className='scoreSpan'>score</span></div>}
         </>
     )
     } else if(this.context.isCorrect === false){
