@@ -32,9 +32,13 @@
   cursor: default;
 }
 
-/* tablets */
+/* tablets / laptops */
 @media screen and (min-width: 768px) {
     .learnSection {
       min-width: 20%;
+    }
+
+    .back-icon {
+      width: 20%;
     }
 }

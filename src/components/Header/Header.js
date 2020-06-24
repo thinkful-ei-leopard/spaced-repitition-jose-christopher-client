@@ -71,6 +71,11 @@ class Header extends Component {
           {TokenService.hasAuthToken()
             ? this.renderLogoutLink()
             : this.renderLoginLink()}
+          <Link 
+          to={TokenService.hasAuthToken() ? '/dashboard' : '/'} 
+          className='homeLink' onClick={this.handleLinkClick}>
+            {TokenService.hasAuthToken() ? 'Dashboard' : 'Home'}
+          </Link>
         </Menu>
       </header>
     );
