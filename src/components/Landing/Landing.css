@@ -14,7 +14,7 @@
     background: linear-gradient(-45deg, #EE7752, #E73C7E, gold, rgb(240, 156, 170));
     background-size: 400% 400%;
     position: relative;
-    animation: change 5s ease-in-out infinite;
+    animation: change 6s ease-in-out infinite;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
