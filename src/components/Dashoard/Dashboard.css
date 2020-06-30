@@ -2,6 +2,12 @@
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
+
+    /*experimental*/
+    box-shadow: .5rem 1rem 1.8rem #888888;
+    margin: 40px auto 70px auto;
+    width: 90%;
+    border-radius: 8px;
 }
 
 .mainUL > li {
@@ -20,6 +26,10 @@
     margin-top: 18px;
     margin-bottom: 18px;
     cursor: default;
+
+    /* experimental */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mainUL > li:hover {
