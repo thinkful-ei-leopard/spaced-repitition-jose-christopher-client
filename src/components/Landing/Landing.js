@@ -7,6 +7,7 @@ function Landing() {
     return (
         <>
         <div className='infoCont'>
+            <h2 className='hablaMobile'>habla</h2>
             <p className='hablaInfo'>
                 Practice learning a language with the Spaced Repetition revision technique.
             </p>

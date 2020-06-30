@@ -5,6 +5,25 @@
     align-items: center;
 }
 
+.hablaMobile {
+    margin-bottom: 5px;
+    font-size: 40px;
+
+
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, gold, rgb(240, 156, 170));
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 5s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hablaMobile:hover {
+    cursor: default;
+}
+
 .landingLink {
     color: red;
     font-weight: bold;
@@ -41,6 +60,10 @@
 
     .infoCont {
         margin: 30px auto 25px auto;
+    }
+
+    .hablaMobile {
+        display: none;
     }
 }
 
