@@ -59,21 +59,10 @@
     }
 
     .infoCont {
-        margin: 30px auto 25px auto;
+        margin: 30px auto 0px auto;
     }
 
     .hablaMobile {
         display: none;
     }
 }
-
-/* @media screen and (min-height: 812px) {
-    .infoCont {
-        margin-top: 50px;
-    }
-
-    .globe {
-        margin-top: 40px;
-        height: 420px;
-    }
-} */

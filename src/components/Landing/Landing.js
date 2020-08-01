@@ -1,6 +1,6 @@
 import React from 'react'
-import ReactGlobe from 'react-globe'
 import {Link} from 'react-router-dom'
+import Globe from 'react-globe.gl'
 import './Landing.css'
 
 function Landing() {
@@ -16,14 +16,9 @@ function Landing() {
             </Link>
         </div>
         <div className='globe'>
-            <ReactGlobe globeOptions={{
-                    enableBackground: false,
-                    cloudsOpacity: 0.8,
-                    enableClouds: true,
-                }}
-                cameraOptions={{
-                    autoRotateSpeed: 2,
-                }}
+            <Globe
+            backgroundColor="#FFFFFF"
+            globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
             />
         </div>
         </>
